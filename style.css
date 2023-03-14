@@ -1,0 +1,377 @@
+/* ---- Global Styles ---- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Lato, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* color: #fff; */
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --main-text-color: #ec5242;
+  --main-color-opac0_8: rgba(236, 82, 66, 0.8);
+  --secondary-text-color-dark: #5c5c5c;
+  --secondary-text-color-light: #e0e2e3;
+  --backgournd-main-dark: #d3d3d3;
+}
+
+/* ---- Navigation ---- */
+.ham-navigation {
+  padding: 5%;
+  padding-bottom: 8%;
+}
+
+/* ---- Headline ---- */
+.nav-heading-container {
+  background-image: url(src/background/people-walking.jpg);
+  background-position: 0 -20%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.background-blur {
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(211, 211, 211, 0.7);
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 3.5%;
+}
+
+.logo {
+  color: var(--main-text-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about-title-container {
+  text-align: center;
+}
+
+.pre-title {
+  color: var(--main-text-color);
+  font-size: 1.5rem;
+}
+
+.title {
+  background-image: url(src/background/red-yellow-flowing.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: contain;
+  color: transparent;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 0;
+}
+
+.about-title {
+  background-color: var(--main-text-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: contain;
+  color: transparent;
+  font-size: 2.3rem;
+  font-weight: 900;
+  padding: 0;
+}
+
+.headline-text {
+  color: var(--secondary-text-color-dark);
+  font-size: 14px;
+  line-height: 25px;
+  padding: 5%;
+  background-color: rgba(220, 220, 220);
+  border: 1px solid #f3f3f3;
+}
+
+.about-headline-text {
+  color: var(--secondary-text-color-dark);
+  font-size: 14px;
+  line-height: 25px;
+  padding: 4% 2%;
+  background-color: #fff;
+  border: 1.5px solid #d8d8d8;
+  text-align: center;
+}
+
+.about-detail-text {
+  color: var(--secondary-text-color-dark);
+  font-size: 13px;
+  line-height: 25px;
+  padding: 2%;
+  text-align: center;
+}
+
+.upcoming {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2%;
+  gap: 10px;
+  margin-bottom: 10%;
+}
+
+.upcoming .date {
+  color: var(--secondary-text-color-dark);
+  font-weight: 900;
+}
+
+.upcoming .location {
+  color: var(--secondary-text-color-dark);
+  font-size: 14px;
+}
+
+/* ---- Main Courses ---- */
+.programs {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5%;
+  gap: 8px;
+  background-image: url(src/background/main-background.svg);
+  background-color: #272A31;
+  background-repeat: repeat;
+  color: #fff;
+}
+
+.programs-header {
+  align-self: center;
+  font-weight: 500;
+  color: var(--secondary-text-color-light);
+}
+
+.half-border-red {
+  border-bottom: 1.5px solid var(--main-text-color);
+  width: 40px;
+  align-self: center;
+  margin: 2% 0 7%;
+}
+
+.course-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  min-height: 6rem;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.course-heading {
+  color: var(--main-text-color);
+}
+
+.course-image-container {
+  max-width: 18%;
+}
+
+.course-container img {
+  width: 100%;
+}
+
+.course-description {
+  width: 50%;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--secondary-text-color-light);
+}
+
+.join-link {
+  align-self: center;
+  color: #fff;
+  background-color: var(--main-text-color);
+  padding: 30px;
+  border-radius: 2px;
+  margin: 7% 0;
+}
+
+/* ---- Course Teachers ---- */
+.teachers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5%;
+  gap: 10px;
+}
+
+.teachers-header {
+  align-self: center;
+  font-weight: 500;
+  color: var(--secondary-text-color-dark);
+}
+
+.teacher-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.teacher-image {
+  width: 90px;
+  height: 90px;
+  min-width: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-image: url(src/background/checkered.svg);
+  background-repeat: no-repeat;
+  background-size: 45%;
+}
+
+.teacher-image img {
+  z-index: 1;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.teacher-title {
+  font-size: 14px;
+  color: var(--main-text-color);
+}
+
+.half-border-gray {
+  border-bottom: 1.5px solid #d8d8d8;
+  width: 20px;
+  align-self: center;
+  margin: 5% 1% 10%;
+}
+
+.teacher-description {
+  min-width: 250px;
+  font-size: 12px;
+}
+
+.teacher-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 15%;
+  padding: 3%;
+  border: 1.5px solid #d8d8d8;
+  border-radius: 5px;
+}
+
+/* ---- Brand ---- */
+.brand {
+  padding: 3.5%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1.5px solid #d8d8d8;
+}
+
+.brand-title {
+  color: var(--secondary-text-color-dark);
+  font-weight: 500;
+}
+
+.brand-description {
+  padding: 0 7%;
+  color: var(--secondary-text-color-dark);
+  font-size: 14px;
+  text-align: center;
+}
+
+.brand-logo-box {
+  border: 1.5px solid #d8d8d8;
+  padding: 8%;
+  margin-bottom: 5%;
+}
+
+/* ---- Alumni ---- */
+.alumni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 3.5%;
+}
+
+.alum-header {
+  color: var(--secondary-text-color-dark);
+  font-weight: 500;
+}
+
+.alum-header-desc {
+  font-size: 13px;
+  text-align: center;
+  color: var(--secondary-text-color-dark);
+  padding: 5% 10%;
+}
+
+.alum-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 0;
+  align-items: stretch;
+}
+
+.alum-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%
+}
+
+.alum1 {
+  background-image: url(src/background/alumni-1.jpg);
+  background-size: cover;
+}
+
+.alum2 {
+  background-image: url(src/background/alumni-2.jpg);
+  background-size: cover;
+}
+
+.alum-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 15%;
+  color: #fff;
+  background-color: var(--main-color-opac0_8);
+}
+
+.alum-title {
+  font-size: 2rem;
+}
+
+/* ---- Footer ---- */
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 3.5%;
+  border-top: 1.5px solid #d8d8d8;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+  margin-left: 5%;
+  font-size: 1rem;
+}
+
+.footer-desc {
+  font-size: 12px;
+  line-height: 20px;
+}
