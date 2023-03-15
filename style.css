@@ -638,7 +638,7 @@ li {
 @media screen and (min-width: 768px) {
   .partner-list {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     padding-bottom: 40px;
   }
 }
@@ -652,21 +652,22 @@ li {
 }
 
 .partner {
-  transition: transform 0.5s;
+  padding: 8px;
+  opacity: 0.6;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .partner a {
   color: var(--secondary-text-color-light);
-  padding: 10px 15px;
   font-size: 1.2rem;
   transition: text-shadow 0.5s;
 }
 
 .partner:hover {
+  opacity: 1;
   transform: scale(1.1);
-}
-.partner a:hover {
-  text-shadow: 3px 3px 3px var(--secondary-text-color-light);
+  text-shadow: 2px 2px 5px var(--secondary-text-color-light);
+  cursor: pointer;
 }
 
 .fix-footer-container {
