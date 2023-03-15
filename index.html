@@ -16,20 +16,45 @@
 </head>
 
 <body>
+  <!-- Hamburger Menu -->
+  <div class="overlay-menu">
+    <ul class="overlay-content">
+      <span class="close">&times;</span>
+      <li><a href="./index.html" id="portfolio-link">Home</a></li>
+      <li><a href="./about.html" id="about-link">About</a></li>
+      <li><a href="#courses" id="course-link">Courses</a></li>
+    </ul>
+  </div>
 
   <header>
     <!-- navi -->
-
+    <nav class="main-nav">
+      <ul class="top-ribbon">
+        <li class="facebook-icon"><img src="src/icons/facebook.svg" alt=""></li>
+        <li class="twitter-icon"><img src="src/icons/twitter.svg" alt="twitter icon"></li>
+        <li class="lang-link">English</li>
+        <li class="my-account-link">My Account</li>
+        <li class="logout-link">Logout</li>
+      </ul>
+      <div class="main-ribbon">
+        <h2 class="main-ribbon-logo"><a href="./index.html"><img src="src/logo/logo.svg" alt="">WebDevAcademy</a></h2>
+        <ul class="main-ribbon-link-list">
+          <li class="about-link"><a href="./about.html">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li>Join</li>
+          <li>News</li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main>
-    <div class="nav-heading-container">
+    <div class="nav-headline-container">
       <div class="background-blur">
         <nav class="ham-navigation">
           <img class="ham-menu" src="src/icons/hamburger.svg" width="35px" alt="">
         </nav>
         <!-- Headline -->
         <section class="headline">
-          <!-- <span class="logo"> <img src="src/logo/logo.svg">WebDevAcademy</span> -->
           <div class="title-container">
             <span class="pre-title">"Hello! Future developer"</span>
             <h1 class="title">WebDev Academy</h1>
@@ -45,47 +70,49 @@
         </section>
       </div>
     </div>
-    <!-- Programs -->
-    <section class="programs">
-      <h2 class="programs-header">Main Courses</h2>
+    <!-- Courses -->
+    <section class="courses" id="courses">
+      <h2 class="courses-header">Main Courses</h2>
       <div class="half-border-red"></div>
-      <div class="course-container">
-        <div class="course-image-container">
-          <img src="src/icons/FrontEnd.svg" alt="">
+      <div class="course-list-container">
+        <div class="course-container">
+          <div class="course-image-container">
+            <img src="src/icons/FrontEnd.svg" alt="">
+          </div>
+          <h3 class="course-heading">FrontEnd</h3>
+          <p class="course-description"> Explore the exciting path of becoming a fornt end developer</p>
         </div>
-        <h3 class="course-heading">FrontEnd</h3>
-        <p class="course-description"> Explore the exciting path of becoming a fornt end developer</p>
-      </div>
-      <div class="course-container">
-        <div class="course-image-container">
-          <img src="src/icons/React.svg" alt="">
+        <div class="course-container">
+          <div class="course-image-container">
+            <img src="src/icons/React.svg" alt="">
+          </div>
+          <h3 class="course-heading">React</h3>
+          <p class="course-description">React makes it painless to create interactive UIs. Design simple views for your
+            application.</p>
         </div>
-        <h3 class="course-heading">React</h3>
-        <p class="course-description">React makes it painless to create interactive UIs. Design simple views for your
-          application.</p>
-      </div>
-      <div class="course-container">
-        <div class="course-image-container">
-          <img src="src/icons/Python.svg" alt="">
+        <div class="course-container">
+          <div class="course-image-container">
+            <img src="src/icons/Python.svg" alt="">
+          </div>
+          <h3 class="course-heading">Python</h3>
+          <p class="course-description">Python is an ideal backend language due to its simplicity and consistency.</p>
         </div>
-        <h3 class="course-heading">Python</h3>
-        <p class="course-description">Python is an ideal backend language due to its simplicity and consistency.</p>
-      </div>
-      <div class="course-container">
-        <div class="course-image-container">
-          <img src="src/icons/Ruby.svg" alt="">
+        <div class="course-container">
+          <div class="course-image-container">
+            <img src="src/icons/Ruby.svg" alt="">
+          </div>
+          <h3 class="course-heading">Ruby</h3>
+          <p class="course-description">A dynamic, open source programming language with a focus on simplicity and
+            productivity.</p>
         </div>
-        <h3 class="course-heading">Ruby</h3>
-        <p class="course-description">A dynamic, open source programming language with a focus on simplicity and
-          productivity.</p>
-      </div>
-      </div>
-      <div class="course-container">
-        <div class="course-image-container">
-          <img src="src/icons/dotnet.svg" alt="">
+
+        <div class="course-container">
+          <div class="course-image-container">
+            <img src="src/icons/dotnet.svg" alt="">
+          </div>
+          <h3 class="course-heading">ASP.NET</h3>
+          <p class="course-description">A framework for building web apps and services with .NET and C#.</p>
         </div>
-        <h3 class="course-heading">ASP.NET</h3>
-        <p class="course-description">A framework for building web apps and services with .NET and C#.</p>
       </div>
       <a class="join-link" href="#">Join WebDev Academy 2023</a>
     </section>
@@ -94,37 +121,91 @@
     <section class="teachers">
       <h1 class="teachers-header">Program Teachers</h1>
       <div class="half-border-red"></div>
-      <div class="teacher-container">
-        <div class="teacher-image">
-          <img src="src/profile-photo/david-mallan.jpg" alt="teacher background image" width="80px">
+      <div class="teachers-list-container">
+        <div class="teacher-container">
+          <div class="teacher-image">
+            <img src="src/profile-photo/david-mallan.jpg" alt="teacher background image" width="80px">
+          </div>
+          <div class="teacher-sub">
+            <h3 class="teacher-name">David J. Mallan</h3>
+            <span class="teacher-title">Teaching CS50 at Standford University</span>
+            <div class="half-border-gray"></div>
+            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
+          </div>
         </div>
-        <div class="teacher-sub">
-          <h3 class="teacher-name">David J. Mallan</h3>
-          <span class="teacher-title">Teaching CS50 at Standford University</span>
-          <div class="half-border-gray"></div>
-          <p class="teacher-description"> Extremely nice teacher and overall successful</p>
+        <div class="teacher-container">
+          <div class="teacher-image">
+            <img src="src/profile-photo/Wes Box.jpg" alt="" width="80px">
+          </div>
+          <div class="teacher-sub">
+            <h3 class="teacher-name">Wes Bos</h3>
+            <span class="teacher-title"> Web Developer for 35 years</span>
+            <div class="half-border-gray"></div>
+            <p class="teacher-description"> Life long web developer with
+              lots of experience.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="teacher-container">
-        <div class="teacher-image">
-          <img src="src/profile-photo/Wes Box.jpg" alt="" width="80px">
-        </div>
-        <div class="teacher-sub">
-          <h3 class="teacher-name">Wes Bos</h3>
-          <span class="teacher-title"> Web Developer for 35 years</span>
-          <div class="half-border-gray"></div>
 
-          <p class="teacher-description"> Life experience of web development </p>
+        <!-- Desktop ver -->
+        <div class="teacher-container desktop-ver">
+          <div class="teacher-image">
+            <img src="src/profile-photo/david-mallan.jpg" alt="teacher background image" width="80px">
+          </div>
+          <div class="teacher-sub">
+            <h3 class="teacher-name">David J. Mallan</h3>
+            <span class="teacher-title">Teaching CS50 at Standford University</span>
+            <div class="half-border-gray"></div>
+            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
+          </div>
+        </div>
+        <div class="teacher-container desktop-ver">
+          <div class="teacher-image">
+            <img src="src/profile-photo/david-mallan.jpg" alt="teacher background image" width="80px">
+          </div>
+          <div class="teacher-sub">
+            <h3 class="teacher-name">David J. Mallan</h3>
+            <span class="teacher-title">Teaching CS50 at Standford University</span>
+            <div class="half-border-gray"></div>
+            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
+          </div>
+        </div>
+        <div class="teacher-container desktop-ver">
+          <div class="teacher-image">
+            <img src="src/profile-photo/david-mallan.jpg" alt="teacher background image" width="80px">
+          </div>
+          <div class="teacher-sub">
+            <h3 class="teacher-name">David J. Mallan</h3>
+            <span class="teacher-title">Teaching CS50 at Standford University</span>
+            <div class="half-border-gray"></div>
+            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
+          </div>
+        </div>
+        <div class="teacher-container desktop-ver">
+          <div class="teacher-image">
+            <img src="src/profile-photo/david-mallan.jpg" alt="teacher background image" width="80px">
+          </div>
+          <div class="teacher-sub">
+            <h3 class="teacher-name">David J. Mallan</h3>
+            <span class="teacher-title">Teaching CS50 at Standford University</span>
+            <div class="half-border-gray"></div>
+            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
+          </div>
         </div>
       </div>
       <div class="teacher-more">More <img src="src/icons/down-arrow.svg" height="15px" alt=""></div>
     </section>
   </main>
-  <!-- <footer>
-    <h2><img src="src/logo/logo.svg" alt="">WebDevAcademy</h2>
-    <p>2023 Web Dev Academy helps you through your journey to become a well versed web developer by leanring the latest
-      technology in web design.</p>
-  </footer> -->
+  <footer class="main-footer-container">
+    <h2 class="footer-logo">
+      <img src="src/logo/logo.svg" alt="">
+      WebDev Academy
+    </h2>
+    <p class="footer-desc">2023 Web Dev Academy US<br>
+      All rights Reserved
+    </p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

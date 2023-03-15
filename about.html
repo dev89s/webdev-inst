@@ -16,20 +16,44 @@
 </head>
 
 <body>
+  <!-- Hamburger Menu -->
+  <div class="overlay-menu">
+    <ul class="overlay-content">
+      <span class="close">&times;</span>
+      <li><a href="./index.html" id="home-link">Home</a></li>
+      <li><a href="./about.html" id="about-link">About</a></li>
+      <li><a href="index.html#courses" id="course-link">Courses</a></li>
+    </ul>
+  </div>
 
   <header>
     <!-- navi -->
-
+    <nav class="main-nav">
+      <ul class="top-ribbon">
+        <li class="facebook-icon"><img src="src/icons/facebook.svg" alt=""></li>
+        <li class="twitter-icon"><img src="src/icons/twitter.svg" alt="twitter icon"></li>
+        <li class="lang-link">English</li>
+        <li class="my-account-link">My Account</li>
+        <li class="logout-link">Logout</li>
+      </ul>
+      <div class="main-ribbon">
+        <h2 class="main-ribbon-logo"><a href="./index.html"><img src="src/logo/logo.svg" alt="">WebDevAcademy</a></h2>
+        <ul class="main-ribbon-link-list">
+          <li class="about-link"><a href="./about.html">About</a></li>
+          <li><a href="./index.html#courses">Courses</a></li>
+          <li>Join</li>
+          <li>News</li>
+        </ul>
+      </div>
   </header>
   <main>
-    <div class="nav-heading-container">
+    <div class="nav-headline-container">
       <div class="background-blur">
         <nav class="ham-navigation">
           <img class="ham-menu" src="src/icons/hamburger.svg" width="35px" alt="">
         </nav>
         <!-- Headline -->
         <section class="headline">
-          <!-- <span class="logo"> <img src="src/logo/logo.svg">WebDevAcademy</span> -->
           <div class="about-title-container">
             <span class="pre-title">"Hello! Future developer"</span>
             <h1 class="about-title">WebDev Academy</h1>
@@ -61,8 +85,9 @@
     </section>
 
     <!-- Alumni -->
-    <section class="alumni">
+    <section class="alumni" id="alumni">
       <h2 class="alum-header">Meet The Almuni</h2>
+      <div class="half-border-red"></div>
       <p class="alum-header-desc">Meet the recent Alumni of WebDev Academy
         and hear their story.
       </p>
@@ -91,6 +116,7 @@
       All rights Reserved
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
