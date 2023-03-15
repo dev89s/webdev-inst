@@ -19,3 +19,14 @@ const courseSec = document.querySelector('#course-link');
 courseSec.addEventListener('click', () => {
   overMenu.style.display = 'none';
 });
+
+// ---- Teachers More Button ---- //
+const teachersMore = document.querySelector('.teacher-more-text');
+const teachersMoreCont = document.querySelector('.teacher-more');
+const deskVer = document.querySelectorAll('.desktop-ver');
+teachersMore.addEventListener('click', () => {
+  for (let teacher of deskVer) {
+    teacher.style.display = 'flex';
+  }
+  teachersMoreCont.style.display = 'none';
+});
