@@ -80,7 +80,7 @@
 
 ## 🎬 Representation <a id="representation"></a>
 
-- A representation of the project by Author himself. [Watch on loom](https://www.loom.com/share/bfaccfc8e55f49b8bc7c299d5e65aba6)
+- A representation of the project by the author. [Watch on loom](https://www.loom.com/share/72303b979df94c2caf6475ddf49125c4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +161,9 @@ If you like this project consider giving a star to the project and if you want t
 
 ## 🙏 Acknowledgments <a id="acknowledgements"></a>
 
-I would like to thank all the coding partners that helped me through building this example.
+Original design idea by [Cindy Shin on Behance](https://www.behance.net/adagio07)<br>
+This design is licensed under [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/).
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
