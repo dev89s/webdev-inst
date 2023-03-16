@@ -20,9 +20,9 @@
   <div class="overlay-menu">
     <ul class="overlay-content">
       <span class="close">&times;</span>
-      <li><a href="./index.html" id="portfolio-link">Home</a></li>
-      <li><a href="./about.html" id="about-link">About</a></li>
-      <li><a href="#courses" id="course-link">Courses</a></li>
+      <li><a class="overlay-menu-link" href="./index.html" id="portfolio-link">Home</a></li>
+      <li><a class="overlay-menu-link" href="./about.html" id="about-link">About</a></li>
+      <li><a class="overlay-menu-link" href="#courses" id="course-link">Courses</a></li>
     </ul>
   </div>
 
@@ -37,12 +37,14 @@
         <li class="logout-link">Logout</li>
       </ul>
       <div class="main-ribbon">
-        <h2 class="main-ribbon-logo"><a href="./index.html"><img src="src/logo/logo.svg" alt="logo icon">WebDevAcademy</a></h2>
+        <h2 class="main-ribbon-logo"><a class="main-logo-link" href="./index.html"><img src="src/logo/logo.svg"
+              alt="logo icon">WebDevAcademy</a></h2>
         <ul class="main-ribbon-link-list">
-          <li class="about-link"><a href="./about.html">About</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li>Join</li>
-          <li>News</li>
+          <li><a class="main-ribbon-links about-link" href="./about.html">About</a></li>
+          <li><a class="main-ribbon-links" href="#courses">Courses</a></li>
+          <li><a class="main-ribbon-links" href="">Join</a></li>
+          <li><a class="main-ribbon-links" href="">News</a></li>
+          <li><button class="main-ribbon-special" type="button">BootCamps</button></li>
         </ul>
       </div>
     </nav>
@@ -74,7 +76,7 @@
     <section class="courses" id="courses">
       <h2 class="courses-header">Main Courses</h2>
       <div class="half-border-red"></div>
-      <div class="course-list-container">
+      <article class="course-list-container">
         <div class="course-container">
           <div class="course-image-container">
             <img src="src/icons/FrontEnd.svg" alt="frontend icon">
@@ -113,86 +115,19 @@
           <h3 class="course-heading">ASP.NET</h3>
           <p class="course-description">A framework for building web apps and services with .NET and C#.</p>
         </div>
-      </div>
+      </article>
       <a class="join-link" href="#">Join WebDev Academy 2023</a>
-      <a class="see-all-courses" href="">SEE ALL COURSES</a>
+      <div class="see-all-courses">
+        <a class="see-all-courses-link" href="">SEE ALL COURSES</a>
+      </div>
     </section>
 
     <!-- Program Teachers -->
     <section class="teachers">
-      <h1 class="teachers-header">Program Teachers</h1>
+      <h2 class="teachers-header">Program Teachers</h2>
       <div class="half-border-red"></div>
       <ul class="teachers-list-container">
-        <li class="teacher-container">
-          <div class="teacher-image">
-            <img src="src/profile-photo/david-mallan.jpg" alt="teacher profile image" width="80px">
-          </div>
-          <div class="teacher-sub">
-            <h3 class="teacher-name">David J. Mallan</h3>
-            <span class="teacher-title">Teaching CS50 at Standford University</span>
-            <div class="half-border-gray"></div>
-            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
-          </div>
-        </li>
-        <li class="teacher-container">
-          <div class="teacher-image">
-            <img src="src/profile-photo/Wes Box.jpg" alt="teacher profile picture " width="80px">
-          </div>
-          <div class="teacher-sub">
-            <h3 class="teacher-name">Wes Bos</h3>
-            <span class="teacher-title"> Web Developer for 35 years</span>
-            <div class="half-border-gray"></div>
-            <p class="teacher-description"> Life long web developer with
-              lots of experience.
-            </p>
-          </div>
-        </li>
 
-        <!-- Desktop ver -->
-        <li class="teacher-container desktop-ver">
-          <div class="teacher-image">
-            <img src="src/profile-photo/david-mallan.jpg" alt="teacher profile image" width="80px">
-          </div>
-          <div class="teacher-sub">
-            <h3 class="teacher-name">David J. Mallan</h3>
-            <span class="teacher-title">Teaching CS50 at Standford University</span>
-            <div class="half-border-gray"></div>
-            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
-          </div>
-        </li>
-        <li class="teacher-container desktop-ver">
-          <div class="teacher-image">
-            <img src="src/profile-photo/david-mallan.jpg" alt="teacher profile image" width="80px">
-          </div>
-          <div class="teacher-sub">
-            <h3 class="teacher-name">David J. Mallan</h3>
-            <span class="teacher-title">Teaching CS50 at Standford University</span>
-            <div class="half-border-gray"></div>
-            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
-          </div>
-        </li>
-        <div class="teacher-container desktop-ver">
-          <div class="teacher-image">
-            <img src="src/profile-photo/david-mallan.jpg" alt="teacher profile image" width="80px">
-          </div>
-          <div class="teacher-sub">
-            <h3 class="teacher-name">David J. Mallan</h3>
-            <span class="teacher-title">Teaching CS50 at Standford University</span>
-            <div class="half-border-gray"></div>
-            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
-          </div>
-        </div>
-        <li class="teacher-container desktop-ver">
-          <div class="teacher-image">
-            <img src="src/profile-photo/david-mallan.jpg" alt="teacher profile image" width="80px">
-          </div>
-          <div class="teacher-sub">
-            <h3 class="teacher-name">David J. Mallan</h3>
-            <span class="teacher-title">Teaching CS50 at Standford University</span>
-            <div class="half-border-gray"></div>
-            <p class="teacher-description"> Extremely nice teacher and overall successful</p>
-          </div>
-        </li>
       </ul>
       <div class="teacher-more"><span class="teacher-more-text">MORE<img src="src/icons/down-arrow.svg" height="15px"
             alt="down arrow icon"></span></div>
@@ -204,19 +139,19 @@
       <div class="half-border-red"></div>
       <ul class="partner-list">
         <li class="partner partner-first-row">
-          <a href="https://www.mozilla.org">Mozilla</a>
+          <a class="partner-list-link" href="https://www.mozilla.org">Mozilla</a>
         </li>
         <li class="partner partner-first-row">
-          <a href="https://www.google.com">Google</a>
+          <a class="partner-list-link" href="https://www.google.com">Google</a>
         </li>
         <li class="partner partner-first-row">
-          <a href="https://www.microsoft.com">Microsoft</a>
+          <a class="partner-list-link" href="https://www.microsoft.com">Microsoft</a>
         </li>
         <li class="partner partner-second-row">
-          <a href="https://www.amazon.com">Amazon</a>
+          <a class="partner-list-link" href="https://www.amazon.com">Amazon</a>
         </li>
         <li class="partner partner-second-row">
-          <a href="https://www.tesla.com">Tesla</a>
+          <a class="partner-list-link" href="https://www.tesla.com">Tesla</a>
         </li>
       </ul>
     </div>
