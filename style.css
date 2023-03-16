@@ -8,7 +8,6 @@
 
 a {
   text-decoration: none;
-  /* color: #fff; */
 }
 
 li {
@@ -21,54 +20,6 @@ li {
   --secondary-text-color-dark: #5c5c5c;
   --secondary-text-color-light: #e0e2e3;
   --background-secondary-dark: #272a31;
-}
-
-/* ----> Remove this part <----- */
-@media screen and (min-width: 768px) {}
-
-/* ---- Overlay Menu ---- */
-.overlay-menu {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  color: white;
-  background-color: rgba(211, 211, 211, 0.7);
-  backdrop-filter: blur(7px);
-}
-
-.overlay-content {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin: auto;
-  width: 80%;
-  font-size: 2rem;
-}
-
-.overlay-menu a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
-
-.overlay-menu a:hover {
-  color: #000;
-}
-
-.overlay-menu .close {
-  align-self: flex-end;
-  color: #fff;
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.overlay-menu .close:hover,
-.overlay-menu .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /* ---- Navigation ---- */
@@ -730,4 +681,49 @@ li {
     color: var(--secondary-text-color-light);
     background-color: var(--background-secondary-dark);
   }
+}
+
+/* ---- Overlay Menu ---- */
+.overlay-menu {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(211, 211, 211, 0.7);
+  backdrop-filter: blur(7px);
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  width: 80%;
+  font-size: 2rem;
+}
+
+.overlay-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.overlay-menu a:hover {
+  color: #000;
+}
+
+.overlay-menu .close {
+  align-self: flex-end;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.overlay-menu .close:hover,
+.overlay-menu .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
