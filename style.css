@@ -43,7 +43,7 @@ li {
   font-size: 2rem;
 }
 
-.overlay-menu .overlay-menu-link  {
+.overlay-menu .overlay-menu-link {
   text-decoration: none;
   color: white;
   font-weight: 600;
@@ -201,7 +201,6 @@ li {
 
 .title {
   background-image: url(src/background/red-yellow-flowing.jpg);
-  background-clip: text;
   -webkit-background-clip: text;
   background-size: contain;
   color: transparent;
@@ -212,7 +211,6 @@ li {
 
 .about-title {
   background-color: var(--main-text-color);
-  background-clip: text;
   -webkit-background-clip: text;
   background-size: contain;
   color: transparent;
@@ -274,7 +272,7 @@ li {
   padding: 3.5%;
   gap: 8px;
   background-image: url(src/background/main-background.svg);
-  background-color: #272A31;
+  background-color: #272a31;
   background-repeat: repeat;
   color: #fff;
 }
@@ -292,7 +290,6 @@ li {
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
     max-width: none;
-
   }
 }
 
@@ -686,7 +683,7 @@ li {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.partner-list-link{
+.partner-list-link {
   color: var(--secondary-text-color-light);
   font-size: 1.2rem;
   transition: text-shadow 0.5s;
