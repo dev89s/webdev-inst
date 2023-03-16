@@ -22,6 +22,51 @@ li {
   --background-secondary-dark: #272a31;
 }
 
+/* ---- Overlay Menu ---- */
+.overlay-menu {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(211, 211, 211, 0.7);
+  backdrop-filter: blur(7px);
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  width: 80%;
+  font-size: 2rem;
+}
+
+.overlay-menu .overlay-menu-link  {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.overlay-menu .overlay-menu-link:hover {
+  color: #000;
+}
+
+.overlay-menu .close {
+  align-self: flex-end;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.overlay-menu .close:hover,
+.overlay-menu .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* ---- Navigation ---- */
 .main-nav {
   display: none;
@@ -51,7 +96,7 @@ li {
   padding: 10px 3.5%;
 }
 
-.main-ribbon-logo a {
+.main-ribbon-logo .main-logo-link {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
@@ -60,20 +105,21 @@ li {
 
 .main-ribbon-link-list {
   display: flex;
+  color: var(--secondary-text-color-dark);
   width: 50%;
   justify-content: space-between;
   align-items: center;
 }
 
-.main-ribbon-link-list a {
-  color: var(--secondary-text-color-dark)
+.main-ribbon-links {
+  color: var(--secondary-text-color-dark);
 }
 
-.main-ribbon-link-list a:hover {
+.main-ribbon-links:hover {
   color: var(--main-text-color);
 }
 
-.about-link a {
+.about-link {
   color: var(--main-text-color);
 }
 
@@ -86,7 +132,7 @@ li {
 }
 
 .main-ribbon-special:hover {
-  color: #fff;  
+  color: #fff;
   background-color: var(--main-text-color);
   cursor: pointer;
 }
@@ -352,7 +398,7 @@ li {
   text-underline-offset: 2px;
 }
 
-.see-all-courses a {
+.see-all-courses-link {
   color: var(--secondary-text-color-light);
 }
 
@@ -640,7 +686,7 @@ li {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.partner a {
+.partner-list-link{
   color: var(--secondary-text-color-light);
   font-size: 1.2rem;
   transition: text-shadow 0.5s;
@@ -681,49 +727,4 @@ li {
     color: var(--secondary-text-color-light);
     background-color: var(--background-secondary-dark);
   }
-}
-
-/* ---- Overlay Menu ---- */
-.overlay-menu {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  color: white;
-  background-color: rgba(211, 211, 211, 0.7);
-  backdrop-filter: blur(7px);
-}
-
-.overlay-content {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin: auto;
-  width: 80%;
-  font-size: 2rem;
-}
-
-.overlay-menu a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
-
-.overlay-menu a:hover {
-  color: #000;
-}
-
-.overlay-menu .close {
-  align-self: flex-end;
-  color: #fff;
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.overlay-menu .close:hover,
-.overlay-menu .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
