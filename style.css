@@ -424,6 +424,10 @@ li {
   display: none;
 }
 
+.teacher-sub {
+  width: 280px;
+}
+
 @media screen and (min-width: 768px) {
   .desktop-ver {
     display: flex;
@@ -431,8 +435,8 @@ li {
 }
 
 .teacher-image {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -449,13 +453,13 @@ li {
 
 .teacher-image img {
   z-index: 1;
-  position: absolute;
-  width: 80px;
-  height: 80px;
+  position: relative;
+  width: 90%;
+  height: 90%;
 }
 
 .teacher-title {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--main-text-color);
 }
 
@@ -463,7 +467,7 @@ li {
   border-bottom: 1.5px solid #d8d8d8;
   width: 20px;
   align-self: center;
-  margin: 3% 1% 7%;
+  margin: 3% 1% 5%;
 }
 
 .teacher-description {
