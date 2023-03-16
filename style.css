@@ -97,7 +97,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 3.5%;
+  padding: 10px 3.5%;
 }
 
 .main-ribbon-logo a {
@@ -111,14 +111,33 @@ li {
   display: flex;
   width: 50%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-ribbon-link-list a {
-  color: #000;
+  color: var(--secondary-text-color-dark)
+}
+
+.main-ribbon-link-list a:hover {
+  color: var(--main-text-color);
 }
 
 .about-link a {
   color: var(--main-text-color);
+}
+
+.main-ribbon-special {
+  font-size: 1rem;
+  color: var(--main-text-color);
+  background-color: #fff;
+  border: 3.5px solid var(--main-text-color);
+  padding: 8px 10px;
+}
+
+.main-ribbon-special:hover {
+  color: #fff;  
+  background-color: var(--main-text-color);
+  cursor: pointer;
 }
 
 .ham-navigation {
@@ -312,6 +331,11 @@ li {
     min-height: 0;
     padding: 5%;
   }
+
+  .course-container:hover {
+    transform: scale(1.02);
+    border: 0.5px solid #fff;
+  }
 }
 
 .course-heading {
@@ -375,6 +399,10 @@ li {
   padding: 5% 0 3%;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.see-all-courses a {
+  color: var(--secondary-text-color-light);
 }
 
 @media screen and (min-width: 768px) {
